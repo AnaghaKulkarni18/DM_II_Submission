@@ -22,7 +22,9 @@ def index():
 
 @app.route('/predict',methods=['POST'])
 def predict():
-   
+    '''
+    For rendering results on HTML GUI
+    '''
     LotArea = int(request.form['LotArea'])
     GrLivArea = int(request.form['GrLivArea'])
     
